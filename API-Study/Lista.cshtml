@@ -1,0 +1,9 @@
+@model List<MeuProjeto.Models.Produto>
+
+<h2>Lista de Produtos</h2>
+<ul>
+    @foreach (var produto in Model)
+    {
+        <li>@produto.Nome - R$ @produto.Preco</li>
+    }
+</ul>
