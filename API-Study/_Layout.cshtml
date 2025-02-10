@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MeuProjeto</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <h1>Meu Site ASP.NET Core</h1>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">Início</a> |
+            <a asp-controller="Produto" asp-action="Lista">Produtos</a>
+        </nav>
+    </header>
+    
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - MeuProjeto</p>
+    </footer>
+</body>
+</html>
